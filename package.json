@@ -1,10 +1,10 @@
 {
   "name": "selectOn",
   "version": "0.0.1",
-  "description": "A homemade event delegation using selector",
+  "description": "A homemade selector-based event delegation module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha-phantomjs test/test.html"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/anqurvanillapy/selecton/issues"
   },
-  "homepage": "https://github.com/anqurvanillapy/selecton#readme"
+  "homepage": "https://github.com/anqurvanillapy/selecton#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "mocha-phantomjs": "^4.1.0"
+  }
 }

@@ -1,7 +1,6 @@
-'use strict'
-module.exports = selectOn()
+(function selectOn (exports) {
+  'use strict'
 
-function selectOn () {
   Element.prototype.selectOn = function (eventName, selector, handler) {
     var delegate = function (criteria, listener) {
       return function (e) {
@@ -32,4 +31,6 @@ function selectOn () {
 
     this.addEventListener(eventName, partialDelegate(criteria)(handler))
   }
-}
+
+  exports = this
+})(this)
